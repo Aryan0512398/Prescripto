@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Outfit:wght@100..900&family=Playwrite+IT+Moderna:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.active hr{
+    @apply block
+}
+::-webkit-scrollbar{
+    @apply hidden
+}
+
+
+@layer components {
+    .text-primary{
+        color: #5f6FFF;
+    }
+    .bg-primary{
+        background-color: #5f6FFF;
+    }
+    
+  }
+* {
+  font-family: 'Outfit', sans-serif;
+}
+@media(max-width:740px){
+    .active p{
+        @apply text-white bg-[#5f6FFF]
+    }
+}
+
